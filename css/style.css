@@ -77,11 +77,13 @@ body {
 .main-nav-list {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 3.2rem;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
+    display: inline-block;
     text-decoration: none;
     color: #333;
     font-weight: 500;
@@ -92,6 +94,19 @@ body {
 .main-nav-link:hover,
 .main-nav-link:active {
     color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: #333;
 }
 
 /***************************/
@@ -113,8 +128,6 @@ body {
     align-items: center;
 }
 
-
-
 .hero-description {
     font-size: 2rem;
     line-height: 1.6;
@@ -132,12 +145,9 @@ body {
     transition: background-color 0.8s;
 }
 
-
 .hero-img {
     width: 100%;
 }
-
-
 
 .delivered-meals {
     display: flex;
